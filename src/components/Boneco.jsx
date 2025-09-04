@@ -15,12 +15,12 @@ import BotasImg from '../assets/Botas.svg';
 const Boneco = () => {
 
     const [flags, setFlags] = useState({
-        capacete: false,
-        colete: false,
-        luva: false,
-        oculos: false,
-        fone: false,
-        bota: false
+        capacete: true,
+        colete: true,
+        luva: true,
+        oculos: true,
+        fone: true,
+        bota: true
     });
 
     useEffect(() => {
@@ -41,14 +41,14 @@ const Boneco = () => {
 
     return (
         <div className='relative flex w-[30vh]'>
-            <img src={Corpo} className='w-full' />
+            <img src={Corpo}/>
 
             <Epi ativo={flags.colete} epi={ColeteImg} style={{ top: '19%', left: '14%', width: '21vh' }} />
-            <Epi ativo={flags.capacete} epi={HelmetImg} style={{ top: '-2%', left: '25%' }} />
-            <Epi ativo={flags.luva} epi={LuvaImg} style={{ top: '48%', left: '0%' }} />
-            <Epi ativo={flags.oculos} epi={OculosImg} style={{ top: '9%', left: '30%' }} />
-            <Epi ativo={flags.fone} epi={FoneImg} style={{ top: '8%', left: '22%' }} />
-            <Epi ativo={flags.bota} epi={BotasImg} style={{ top: '86%', left: '7%' }} />
+            <Epi ativo={flags.capacete} epi={HelmetImg} style={{ top: '-2%', left: '25%', width: '14vh' }} />
+            <Epi ativo={flags.luva} epi={LuvaImg} style={{ top: '48%', left: '0%', width: '30vh' }} />
+            <Epi ativo={flags.oculos} epi={OculosImg} style={{ top: '9%', left: '29%', width: '12vh' }} />
+            <Epi ativo={flags.fone} epi={FoneImg} style={{ top: '8%', left: '22%', width: '16vh' }} />
+            <Epi ativo={flags.bota} epi={BotasImg} style={{ top: '86%', left: '7%', width: '25vh' }} />
         </div>
     );
 };
