@@ -1,8 +1,6 @@
-
 const Epi = ({ epi, style, ativo }) => {
     return (
-        <img src={epi} className={`${ativo ? "flex" : "hidden"} absolute`} style={style}
-        />
+        <img src={epi} className={`${ativo ? "flex" : "hidden"} absolute`} style={style}/>
     )
 }
 

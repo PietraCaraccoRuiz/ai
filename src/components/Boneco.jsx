@@ -30,11 +30,11 @@ const Boneco = () => {
                 .catch(err => console.error(err));
         };
 
-        fetchFlags(); // busca inicial
+        fetchFlags();
 
-        const interval = setInterval(fetchFlags, 2000); // busca a cada 2 segundos
+        const interval = setInterval(fetchFlags, 1000);
 
-        return () => clearInterval(interval); // limpa quando o componente desmontar
+        return () => clearInterval(interval);
     }, []);
 
 
@@ -43,12 +43,12 @@ const Boneco = () => {
         <div className='relative flex w-[30vh]'>
             <img src={Corpo}/>
 
-            <Epi ativo={flags.colete} epi={ColeteImg} style={{ top: '19%', left: '14%', width: '21vh' }} />
-            <Epi ativo={flags.capacete} epi={HelmetImg} style={{ top: '-2%', left: '25%', width: '14vh' }} />
-            <Epi ativo={flags.luva} epi={LuvaImg} style={{ top: '48%', left: '0%', width: '30vh' }} />
-            <Epi ativo={flags.oculos} epi={OculosImg} style={{ top: '9%', left: '29%', width: '12vh' }} />
-            <Epi ativo={flags.fone} epi={FoneImg} style={{ top: '8%', left: '22%', width: '16vh' }} />
-            <Epi ativo={flags.bota} epi={BotasImg} style={{ top: '86%', left: '7%', width: '25vh' }} />
+            <Epi ativo={flags.colete} epi={ColeteImg} style={{ top: '11.6vh', left: '3.6vh', width: '21vh' }} />
+            <Epi ativo={flags.capacete} epi={HelmetImg} style={{ top: '-1.5vh', left: '7.2vh', width: '14vh' }} />
+            <Epi ativo={flags.luva} epi={LuvaImg} style={{ top: '30vh', left: '-0.8vh', width: '30vh' }} />
+            <Epi ativo={flags.oculos} epi={OculosImg} style={{ top: '5.5vh', left: '8.2vh', width: '12vh' }} />
+            <Epi ativo={flags.fone} epi={FoneImg} style={{ top: '5vh', left: '6.1vh', width: '16vh' }} />
+            <Epi ativo={flags.bota} epi={BotasImg} style={{ top: '53vh', left: '1.2vh', width: '25vh' }} />
         </div>
     );
 };
