@@ -43,12 +43,12 @@ const Boneco = () => {
         <div className='relative flex w-[30vh]'>
             <img src={Corpo}/>
 
-            <Epi ativo={flags.colete} epi={ColeteImg} style={{ top: '11.6vh', left: '3.6vh', width: '21vh' }} />
-            <Epi ativo={flags.capacete} epi={HelmetImg} style={{ top: '-1.5vh', left: '7.2vh', width: '14vh' }} />
-            <Epi ativo={flags.luva} epi={LuvaImg} style={{ top: '30vh', left: '-0.8vh', width: '30vh' }} />
-            <Epi ativo={flags.oculos} epi={OculosImg} style={{ top: '5.5vh', left: '8.2vh', width: '12vh' }} />
-            <Epi ativo={flags.fone} epi={FoneImg} style={{ top: '5vh', left: '6.1vh', width: '16vh' }} />
-            <Epi ativo={flags.bota} epi={BotasImg} style={{ top: '53vh', left: '1.2vh', width: '25vh' }} />
+            <Epi ativo={flags.colete} epi={ColeteImg} style={{ top: '12.6vh', left: '4.5vh', width: '21vh' }} />
+            <Epi ativo={flags.capacete} epi={HelmetImg} style={{ top: '-1vh', left: '7.4vh', width: '14vh' }} />
+            <Epi ativo={flags.luva} epi={LuvaImg} style={{ top: '32vh', left: '-0.vh', width: '30vh' }} />
+            <Epi ativo={flags.oculos} epi={OculosImg} style={{ top: '5.5vh', left: '8.3vh', width: '12vh' }} />
+            <Epi ativo={flags.fone} epi={FoneImg} style={{ top: '5vh', left: '6.3vh', width: '16vh' }} />
+            <Epi ativo={flags.bota} epi={BotasImg} style={{ top: '56vh', left: '2vh', width: '25vh' }} />
         </div>
     );
 };

@@ -5,7 +5,7 @@ import Container from './Container'
 
 const Home = () => {
     return (
-        <div className='bg-white h-[100vh] w-full overflow-x-hidden md:overflow-hidden'>
+        <div className='bg-white h-[100vh] overflow-x-hidden md:overflow-hidden'>
             <Header />
             <Container />
         </div>

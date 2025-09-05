@@ -4,9 +4,11 @@ import Items from './Items'
 
 const Container = () => {
     return (
-        <div className='bg-[#F8F9FA] flex flex-col md:flex-row justify-around items-center mx-[20vh] mt-[3vh] py-10 shadow-2xl rounded-4xl'>
-            <Boneco />
-            <Items />
+        <div className='flex flex-col md:flex-row justify-center items-center w-full my-10 md:mt-5'>
+            <div className='bg-gray-200 rounded-4xl flex flex-col md:flex-row w-fit h-full justify-around items-center p-10 shadow-lg gap-40'>
+                <Boneco />
+                <Items />
+            </div>
         </div>
     )
 }

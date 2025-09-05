@@ -11,7 +11,7 @@ import BotasImg from "../assets/Botas.svg";
 
 const Items = () => {
   return (
-    <div className="grid grid-cols-2 gap-4">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
       <Item
         item={HelmetImg}
         tooltip="Capacete de segurança: protege a cabeça contra impactos e objetos que possam cair durante o trabalho. Sempre use corretamente ajustado."
